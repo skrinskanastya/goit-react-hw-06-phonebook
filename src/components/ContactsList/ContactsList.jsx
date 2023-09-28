@@ -1,19 +1,3 @@
-// export const ContactsList = ({ filteredContacts, onDelete }) => {
-//   return (
-//     <div>
-//       <ul>
-//         {filteredContacts.map(contact => (
-//           <li key={contact.id}>
-//             {contact.name} : {contact.number}
-//             <StyledBtn type="button" onClick={() => onDelete(contact.id)}>
-//               Delete
-//             </StyledBtn>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact, getContacts } from 'redux/contactsSlice';
 import { getFilter } from 'redux/filterSlice';
